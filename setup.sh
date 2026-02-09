@@ -13,6 +13,6 @@ echo "✓ Virtual environment created and dependencies installed!"
 echo "Going To activate the environment, run: source venv/bin/activate"
 source venv/bin/activate
 
-echo "Going to run the app, execute: python app.py"
+echo "Going to run the appin background, execute: python app.py"
 
-python app.py
+nohup python app.py > app.log 2>&1 &
